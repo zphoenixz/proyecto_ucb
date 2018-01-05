@@ -38,7 +38,7 @@ var materias = [
 app.use(routear(), ruta_materia);
 function routear(){
   for (i = 0; i < materias.length; ++i) {
-    if ( document.URL.split('/')[2] == materias[i]){
+    if ( document.URL.split('/')[3] == materias[i]){
         console.log("ire a url "+materias[i]);
         return "/"+materias[i];
     }
