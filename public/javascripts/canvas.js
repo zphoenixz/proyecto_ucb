@@ -414,7 +414,7 @@ function subject(nombre, x, y, radius, r, g, b){
 			if(dok<20){
 				console.log("Quiero añadir");	
 			}else if(dver<30){
-				console.log("Quiero ver");
+				console.log("Quiero ver"+__dirname);
 				NMateria = this.nombre;
 				window.open("https://inscribirme.herokuapp.com/materia");
 			}else{
