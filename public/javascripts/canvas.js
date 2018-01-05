@@ -1,4 +1,8 @@
 // Initial Setup--------------------------------------------------------------
+var express = require('express');
+var path = require('path');
+var favicon = require('serve-favicon');
+
 var aux = require('./materia');
 var canvas = document.querySelector('canvas');
 var c = canvas.getContext('2d');
