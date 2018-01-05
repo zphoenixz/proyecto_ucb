@@ -2,6 +2,7 @@ var NMateria = "Sin Nombre";
 
 function set_NMateria(nombre){
     NMateria = nombre;
+    console.log("Supuestamente cambie a "+NMateria);
     return NMateria;
 }
 
