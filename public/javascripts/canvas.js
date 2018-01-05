@@ -441,7 +441,6 @@ function subject(nombre, x, y, radius, r, g, b){
 			else
 				canvas.style.cursor = "zoom-in";
 			clickedcircle = pos;
-			//console.log("Entre");
 		}else if(clickedcircle == pos){
 			canvas.style.cursor = "grab";
 			clickedcircle = -1;
@@ -451,8 +450,6 @@ function subject(nombre, x, y, radius, r, g, b){
 // -------------------------------------------------------------------------------
 
 // Implementation-----------------------------------------------------------------
-
-
 function init() {
 	subjects = [];
 
