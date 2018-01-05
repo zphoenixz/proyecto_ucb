@@ -155,6 +155,14 @@ addEventListener("mouseup", function(event) {
 // ---------------------------------------------------------------------------
 
 //Funciones usadas------------------------------------------------------------
+function abrirVentana(){
+	var windowObjectReference;
+	var strWindowFeatures = "menubar=no,location=yes,resizable=no,scrollbars=yes,status=yes";
+	
+	function openRequestedPopup() {
+	  windowObjectReference = window.open("https://inscribirme.herokuapp.com/materia", "CNN_WindowName", strWindowFeatures);
+	}
+}
 function click(x,y) {
 	var element = document.elementFromPoint(x,y);
 	element.click();
@@ -420,17 +428,10 @@ function subject(nombre, x, y, radius, r, g, b){
 			if(dok<20){
 				console.log("Quiero añadir");	
 			}else if(dver<30){
-				//var nom = CNombre(this.nombre);
-				//var nom = set_NMateria(this.nombre);
-				//mat_selec = this.nombre;
-				//NMateria = this.nombre;
-				//console.log("Quiero ver " + mat_selec);
-				//var n = "width=1354,height=836,status=0,titlebar=0,scrollbars=0,menubar=0,toolbar=0,location=0,resizable=1";
-				//window.open(getPlayerUrlForTranscript(e, t, r), "psplayer", n)
 				var testvalue = this.nombre;
 				document.cookie = "testcookie=" + encodeURIComponent( testvalue );
-				
-				window.open("https://inscribirme.herokuapp.com/materia");
+				abrirVentana();
+				//window.open("https://inscribirme.herokuapp.com/materia");
 			}else{
 				this.radius = this.radaux;
 				this.flag = true;
