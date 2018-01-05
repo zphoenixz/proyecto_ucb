@@ -37,7 +37,7 @@ var materias = [
 ];
 app.use(function(){
   for (i = 0; i < materias.length; ++i) {
-    if (materias[index] == materias[i]){
+    if (materias[i] == materias[i]){
         return "/"+materias[i];
     }
   }
