@@ -1,5 +1,5 @@
 // Initial Setup--------------------------------------------------------------
-import { NMateria } from 'materia';
+import NMateria from 'materia';
 var canvas = document.querySelector('canvas');
 var c = canvas.getContext('2d');
 var subjects, clickedcircle = -1, search_up = false;

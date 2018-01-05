@@ -1,4 +1,3 @@
-
 var NMateria = "Sin Nombre";
 export{NMateria};
 
