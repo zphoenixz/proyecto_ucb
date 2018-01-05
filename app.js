@@ -44,7 +44,7 @@ function routear(){
   }
 }*/
 //routear();
-app.use('/Calculo I');
+app.use('/Calculo I', ruta_materia);
 //app.use(routear(), ruta_materia);
 //==================================================================MANEJAR ERRORES
 // catch 404 and forward to error handler
