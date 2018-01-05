@@ -4,8 +4,9 @@ export{NMateria};
 
 
 function onload(){
+    console.log("La materia cargada es "+NMateria);
     document.getElementById('tit').value=NMateria;
-    console.log(NMateria);
+    
 }
 
 function init(){
