@@ -37,14 +37,18 @@ var materias = [
 	"pra","pre","pre","pro","aru","ara","are","are","aro","aru","bra","bre","bre","bro","bru","cra","cre","cre","cro","cru",
 	"dra","dre","dre","dro","dru","era","ere","ere","ero","eru"
 ];
-/*
+
 function routear(){
   for (i = 0; i < materias.length; i++) {
-    app.use('/'+materias[i], ruta_materia);
+    //if(materias[i].indexOf(' '));
+    //agregar un % o algo asi para no tener problemas con los espacios
+    var aux = materias[i];
+    aux = encodeURIComponent(sParameter.trim()) 
+    app.use('/'+aux, ruta_materia);
   }
-}*/
-//routear();
-app.use('/Calculo I', ruta_materia);
+}
+routear();
+//app.use('/Calculo I', ruta_materia);
 //app.use(routear(), ruta_materia);
 //==================================================================MANEJAR ERRORES
 // catch 404 and forward to error handler
