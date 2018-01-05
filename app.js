@@ -38,17 +38,13 @@ var materias = [
 	"dra","dre","dre","dro","dru","era","ere","ere","ero","eru"
 ];
 /*
-*/
-routear();
 function routear(){
   for (i = 0; i < materias.length; i++) {
-    /*if ( document.URL.split('.com')[1] == ('/'+materias[i])+'/'){
-      return ('/' + materias[i]);
-    }*/
     app.use('/'+materias[i], ruta_materia);
   }
-}
+}*/
 routear();
+app.use('/Calculo I');
 //app.use(routear(), ruta_materia);
 //==================================================================MANEJAR ERRORES
 // catch 404 and forward to error handler
