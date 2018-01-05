@@ -40,7 +40,7 @@ app.use(function(){
   for (i = 0; i < materias.length; ++i) {
     if ( document.URL.split('/')[3] == materias[i]){
       console.log('Encontre a :' +materias[i]);
-        return '/'+materias[i];
+        return path.join('/', materias[i]);
     }
   }
 }, ruta_materia);

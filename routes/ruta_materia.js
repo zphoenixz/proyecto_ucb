@@ -5,7 +5,6 @@ var path = require('path');
 /* GET home page. */
 router.use(express.static('public'));
 router.get('/', function(req, res) {
-  console.log(__dirname);
   res.sendFile('materia.html', {root: path.join(__dirname, '../views')});
 });
 
