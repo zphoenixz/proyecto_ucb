@@ -26,7 +26,8 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use('/', index);
 app.use('/users', users);
 app.use('/materia', ruta_materia);
-app.use('/'+'pro', ruta_materia);
+app.use(function(){
+return '/pro';}, ruta_materia);
 //==================================================================MANEJAR MATERIAS
 var materias = [
 	"Calculo I", //Busquedas escondidas como atributo mat
