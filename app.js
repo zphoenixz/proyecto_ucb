@@ -43,7 +43,7 @@ function routear(){
     app.use('/'+materias[i], ruta_materia);
   }
 }*/
-routear();
+//routear();
 app.use('/Calculo I');
 //app.use(routear(), ruta_materia);
 //==================================================================MANEJAR ERRORES
