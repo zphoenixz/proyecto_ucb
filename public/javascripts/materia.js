@@ -1,6 +1,8 @@
 var NMateria = "Sin Nombre";
-export{NMateria};
-
+exports.NMateria = NMateria;
+function set_NMateria(nombre){
+    NMATERIA = nombre;
+}
 
 function onload(){
     console.log("La materia cargada es "+NMateria);

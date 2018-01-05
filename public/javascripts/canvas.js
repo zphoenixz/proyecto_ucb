@@ -1,5 +1,5 @@
 // Initial Setup--------------------------------------------------------------
-import NMateria from 'materia';
+var aux = require('./materia');
 var canvas = document.querySelector('canvas');
 var c = canvas.getContext('2d');
 var subjects, clickedcircle = -1, search_up = false;
@@ -415,9 +415,9 @@ function subject(nombre, x, y, radius, r, g, b){
 			if(dok<20){
 				console.log("Quiero añadir");	
 			}else if(dver<30){
-				
-				NMateria = this.nombre;
-				console.log("Quiero ver "+NMateria);
+				aux.NMateria = this.nombre;
+				//NMateria = this.nombre;
+				console.log("Quiero ver "+aux.NMateria);
 				window.open("https://inscribirme.herokuapp.com/materia");
 			}else{
 				this.radius = this.radaux;
