@@ -43,7 +43,7 @@ function routear(){
     //if(materias[i].indexOf(' '));
     //agregar un % o algo asi para no tener problemas con los espacios
     var aux = materias[i];
-    aux = encodeURIComponent(sParameter.trim()) 
+    aux = encodeURIComponent(aux.trim()) 
     app.use('/'+aux, ruta_materia);
   }
 }
