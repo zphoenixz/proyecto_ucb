@@ -35,15 +35,15 @@ var materias = [
 	"pra","pre","pre","pro","aru","ara","are","are","aro","aru","bra","bre","bre","bro","bru","cra","cre","cre","cro","cru",
 	"dra","dre","dre","dro","dru","era","ere","ere","ero","eru"
 ];
-app.use(routear(), ruta_materia);
-function routear(){
+app.use(function(){
   for (i = 0; i < materias.length; ++i) {
     if ( document.URL.split('/')[3] == materias[i]){
         console.log("ire a url ->"+materias[i]);
         return "/"+materias[i];
     }
   }
-}
+}, ruta_materia);
+
 //==================================================================MANEJAR ERRORES
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
