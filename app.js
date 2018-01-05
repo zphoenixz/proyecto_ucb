@@ -26,7 +26,22 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use('/', index);
 app.use('/users', users);
 app.use('/materia', ruta_materia);
-
+//==================================================================MANEJAR MATERIAS
+var materias = [
+	"Calculo I", //Busquedas escondidas como atributo mat
+	"Calculo II","Calculo III","Algebra I","Algebra II","Intro a la Prog.","Programacion I","Programacion II",
+	"Fisica I","Fisica II","Fisica III","Des. Esp. Emprendedor","Calculo II","Calculo III","Algebra I","Algebra II",
+  "Intro a la Prog.","Programacion I","Programacion II","Fisica I","Fisica II","Fisica III","Des. Esp. Emprendedor",
+	"pra","pre","pre","pro","aru","ara","are","are","aro","aru","bra","bre","bre","bro","bru","cra","cre","cre","cro","cru",
+	"dra","dre","dre","dro","dru","era","ere","ere","ero","eru"
+];
+app.use(function(){
+  for (i = 0; i < materias.length; ++i) {
+    if (materias[index] == materias[i]){
+        return "/"+materias[i];
+    }
+  }
+}, ruta_materia);
 //==================================================================MANEJAR ERRORES
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
