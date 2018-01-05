@@ -15,65 +15,15 @@ var mouse = {
 	x: innerWidth / 2,
 	y: innerHeight / 2 
 };
-var mat_selec;
-function GetMat(){
-	return mat_selec;
-}
+
 var primeravuelta = true;
 var materias = [
 	"Calculo I", //Busquedas escondidas como atributo mat
-	"Calculo II",
-	"Calculo III",
-	"Algebra I",
-	"Algebra II",
-	"Intro a la Prog.",
-	"Programacion I",
-	"Programacion II",
-	"Fisica I",
-	"Fisica II",
-	"Fisica III",
-	"Des. Esp. Emprendedor",
-	"Calculo II",
-	"Calculo III",
-	"Algebra I",
-	"Algebra II",
-	"Intro a la Prog.",
-	"Programacion I",
-	"Programacion II",
-	"Fisica I",
-	"Fisica II",
-	"Fisica III",
-	"Des. Esp. Emprendedor",
-	"pra",
-	"pre",
-	"pre",
-	"pro",
-	"aru",
-	"ara",
-	"are",
-	"are",
-	"aro",
-	"aru",
-	"bra",
-	"bre",
-	"bre",
-	"bro",
-	"bru",
-	"cra",
-	"cre",
-	"cre",
-	"cro",
-	"cru",
-	"dra",
-	"dre",
-	"dre",
-	"dro",
-	"dru",
-	"era",
-	"ere",
-	"ere",
-	"ero",
-	"eru"
+	"Calculo II","Calculo III","Algebra I","Algebra II","Intro a la Prog.","Programacion I","Programacion II",
+	"Fisica I","Fisica II","Fisica III","Des. Esp. Emprendedor","Calculo II","Calculo III","Algebra I","Algebra II",
+  "Intro a la Prog.","Programacion I","Programacion II","Fisica I","Fisica II","Fisica III","Des. Esp. Emprendedor",
+	"pra","pre","pre","pro","aru","ara","are","are","aro","aru","bra","bre","bre","bro","bru","cra","cre","cre","cro","cru",
+	"dra","dre","dre","dro","dru","era","ere","ere","ero","eru"
 ];
 var xx1, xx2, yy1, yy2;
 // ---------------------------------------------------------------------------
@@ -155,14 +105,7 @@ addEventListener("mouseup", function(event) {
 // ---------------------------------------------------------------------------
 
 //Funciones usadas------------------------------------------------------------
-function abrirVentana(){
-	var windowObjectReference;
-	var strWindowFeatures = "menubar=no,location=yes,resizable=no,scrollbars=yes,status=yes";
-	
-	function openRequestedPopup() {
-	  windowObjectReference = window.open("https://inscribirme.herokuapp.com/materia", "CNN_WindowName", strWindowFeatures);
-	}
-}
+
 function click(x,y) {
 	var element = document.elementFromPoint(x,y);
 	element.click();
@@ -430,8 +373,8 @@ function subject(nombre, x, y, radius, r, g, b){
 			}else if(dver<30){
 				var testvalue = this.nombre;
 				document.cookie = "testcookie=" + encodeURIComponent( testvalue );
-				abrirVentana();
-				//window.open("https://inscribirme.herokuapp.com/materia");
+	
+				window.open("https://inscribirme.herokuapp.com/"+testvalue);
 			}else{
 				this.radius = this.radaux;
 				this.flag = true;
