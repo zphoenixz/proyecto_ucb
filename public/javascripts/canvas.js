@@ -413,6 +413,9 @@ function subject(nombre, x, y, radius, r, g, b){
 			//var dsalir = distance(mouse.x, mouse.y, this.x+62, this.y-62);
 			if(dok<20){
 				console.log("Quiero añadir");
+				NMateria = this.nombre;
+				window.open("https://inscribirme.herokuapp.com/materia");
+				
 			}else if(dver<30){
 				console.log("Quiero ver");
 			}else{
