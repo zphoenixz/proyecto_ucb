@@ -39,16 +39,13 @@ var materias = [
 /*
 */
 function routear(){
-  for (i = 0; i < materias.length; ++i) {
+  for (i = 0; i < materias.length; i++) {
     if ( document.URL.split('.com')[1] == ('/'+materias[i])+'/'){
       return '/' + materias[i];
     }
   }
 }
 app.use(routear(), ruta_materia);
-
-
-
 //==================================================================MANEJAR ERRORES
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
