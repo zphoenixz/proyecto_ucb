@@ -10,7 +10,7 @@ function set_NMateria(nombre){
 
 function onload(){
     console.log("La materia cargada es "+NMateria);
-    document.getElementsByName('tit')[0].value = NMateria;
+    //document.getElementsByName('tit')[0].value = NMateria;
     
 }
 
