@@ -37,13 +37,15 @@ var materias = [
 	"dra","dre","dre","dro","dru","era","ere","ere","ero","eru"
 ];
 /*
-for (i = 0; i < materias.length; ++i) {
-  if ( document.URL.split('/')[3] == materias[i]){
-    app.use('/'+materias[i],ruta_materia);
-  }
-}*/
+*/
 function routear(){
-  return '/pro';}
+  for (i = 0; i < materias.length; ++i) {
+    if ( document.URL.split('/')[3] == materias[i]){
+      return '/' + materias[i];
+    }
+  }
+  
+}
 app.use(routear(), ruta_materia);
 
 
