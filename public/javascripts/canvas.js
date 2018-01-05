@@ -422,9 +422,14 @@ function subject(nombre, x, y, radius, r, g, b){
 			}else if(dver<30){
 				//var nom = CNombre(this.nombre);
 				//var nom = set_NMateria(this.nombre);
-				mat_selec = this.nombre;
+				//mat_selec = this.nombre;
 				//NMateria = this.nombre;
-				console.log("Quiero ver " + mat_selec);
+				//console.log("Quiero ver " + mat_selec);
+				//var n = "width=1354,height=836,status=0,titlebar=0,scrollbars=0,menubar=0,toolbar=0,location=0,resizable=1";
+				//window.open(getPlayerUrlForTranscript(e, t, r), "psplayer", n)
+				var testvalue = this.nombre;
+				document.cookie = "testcookie=" + encodeURIComponent( testvalue );
+				
 				window.open("https://inscribirme.herokuapp.com/materia");
 			}else{
 				this.radius = this.radaux;
