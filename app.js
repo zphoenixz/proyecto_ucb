@@ -24,7 +24,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', index);
 app.use('/users', users);
-app.use('/materia', ruta_materia);
+//app.use('/materia', ruta_materia);
 
 //==================================================================MANEJAR ERRORES
 // catch 404 and forward to error handler
