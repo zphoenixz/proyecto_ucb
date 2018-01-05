@@ -15,6 +15,10 @@ var mouse = {
 	x: innerWidth / 2,
 	y: innerHeight / 2 
 };
+var mat_selec;
+function GetMat(){
+	return mat_selec;
+}
 var primeravuelta = true;
 var materias = [
 	"Calculo I", //Busquedas escondidas como atributo mat
@@ -417,7 +421,8 @@ function subject(nombre, x, y, radius, r, g, b){
 				console.log("Quiero añadir");	
 			}else if(dver<30){
 				//var nom = CNombre(this.nombre);
-				var nom = set_NMateria(this.nombre);
+				//var nom = set_NMateria(this.nombre);
+				mat_selec = nom;
 				//NMateria = this.nombre;
 				console.log("Quiero ver " + nom);
 				window.open("https://inscribirme.herokuapp.com/materia");
