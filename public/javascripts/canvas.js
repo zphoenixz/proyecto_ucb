@@ -422,9 +422,9 @@ function subject(nombre, x, y, radius, r, g, b){
 			}else if(dver<30){
 				//var nom = CNombre(this.nombre);
 				//var nom = set_NMateria(this.nombre);
-				mat_selec = nom;
+				mat_selec = this.nombre;
 				//NMateria = this.nombre;
-				console.log("Quiero ver " + nom);
+				console.log("Quiero ver " + mat_selec);
 				window.open("https://inscribirme.herokuapp.com/materia");
 			}else{
 				this.radius = this.radaux;
