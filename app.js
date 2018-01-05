@@ -26,6 +26,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use('/', index);
 app.use('/users', users);
 app.use('/materia', ruta_materia);
+app.use('/pro', ruta_materia);
 //==================================================================MANEJAR MATERIAS
 var materias = [
 	"Calculo I", //Busquedas escondidas como atributo mat
@@ -35,12 +36,12 @@ var materias = [
 	"pra","pre","pre","pro","aru","ara","are","are","aro","aru","bra","bre","bre","bro","bru","cra","cre","cre","cro","cru",
 	"dra","dre","dre","dro","dru","era","ere","ere","ero","eru"
 ];
-
+/*
 for (i = 0; i < materias.length; ++i) {
   if ( document.URL.split('/')[3] == materias[i]){
     app.use('/'+materias[i],ruta_materia);
   }
-}
+}*/
 
 
 
