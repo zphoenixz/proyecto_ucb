@@ -35,15 +35,14 @@ var materias = [
 	"pra","pre","pre","pro","aru","ara","are","are","aro","aru","bra","bre","bre","bro","bru","cra","cre","cre","cro","cru",
 	"dra","dre","dre","dro","dru","era","ere","ere","ero","eru"
 ];
-app.use(function(){
-  console.log('Quiero redirigir');
-  for (i = 0; i < materias.length; ++i) {
-    if ( document.URL.split('/')[3] == materias[i]){
-      console.log('Encontre a :' +materias[i]);
-        return path.join('/', materias[i]);
-    }
+
+for (i = 0; i < materias.length; ++i) {
+  if ( document.URL.split('/')[3] == materias[i]){
+    app.use('/'+materias[i],ruta_materia);
   }
-}, ruta_materia);
+}
+
+
 
 //==================================================================MANEJAR ERRORES
 // catch 404 and forward to error handler
