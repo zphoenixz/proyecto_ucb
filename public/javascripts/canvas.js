@@ -1,6 +1,6 @@
 // Initial Setup--------------------------------------------------------------
 
-var aux = require('./materia.js');
+//var aux = require('./materia.js');
 var canvas = document.querySelector('canvas');
 var c = canvas.getContext('2d');
 var subjects, clickedcircle = -1, search_up = false;
@@ -416,7 +416,8 @@ function subject(nombre, x, y, radius, r, g, b){
 			if(dok<20){
 				console.log("Quiero añadir");	
 			}else if(dver<30){
-				var nom = CNombre(this.nombre);
+				//var nom = CNombre(this.nombre);
+				var nom = nomset_NMateria(this.nombre);
 				//NMateria = this.nombre;
 				console.log("Quiero ver " + nom);
 				window.open("https://inscribirme.herokuapp.com/materia");

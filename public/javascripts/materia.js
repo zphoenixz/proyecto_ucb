@@ -1,10 +1,11 @@
 var NMateria = "Sin Nombre";
-module.exports = function CNombre(nom) {
+/*module.exports = function CNombre(nom) {
     NMateria = nom;
     return NMateria;
-};
+};*/
 function set_NMateria(nombre){
-    NMATERIA = nombre;
+    NMateria = nombre;
+    return NMateria;
 }
 
 function onload(){
