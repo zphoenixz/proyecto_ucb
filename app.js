@@ -40,7 +40,7 @@ var materias = [
 */
 function routear(){
   for (i = 0; i < materias.length; i++) {
-    if ( document.URL.split('.com')[1] == ('/'+materias[i])+'/'){
+    if ( document.URL.split('.com')[1] == ('/'+materias[i]+'/'){
       return ('/' + materias[i]);
     }
   }
