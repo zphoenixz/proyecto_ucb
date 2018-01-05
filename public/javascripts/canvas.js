@@ -417,7 +417,7 @@ function subject(nombre, x, y, radius, r, g, b){
 				console.log("Quiero añadir");	
 			}else if(dver<30){
 				//var nom = CNombre(this.nombre);
-				var nom = nomset_NMateria(this.nombre);
+				var nom = set_NMateria(this.nombre);
 				//NMateria = this.nombre;
 				console.log("Quiero ver " + nom);
 				window.open("https://inscribirme.herokuapp.com/materia");
