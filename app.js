@@ -21,6 +21,7 @@ app.use(logger('dev'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
+
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', index);
@@ -38,14 +39,17 @@ var materias = [
 ];
 /*
 */
+routear();
 function routear(){
   for (i = 0; i < materias.length; i++) {
-    if ( document.URL.split('.com')[1] == ('/'+materias[i])+'/'){
+    /*if ( document.URL.split('.com')[1] == ('/'+materias[i])+'/'){
       return ('/' + materias[i]);
-    }
+    }*/
+    app.use('/'+materias[i], ruta_materia);
   }
 }
-app.use(routear(), ruta_materia);
+routear();
+//app.use(routear(), ruta_materia);
 //==================================================================MANEJAR ERRORES
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
