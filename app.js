@@ -38,6 +38,7 @@ var materias = [
 app.use(function(){
   for (i = 0; i < materias.length; ++i) {
     if (materias[i] == materias[i]){
+        console.log("ire a url "+materias[i]);
         return "/"+materias[i];
     }
   }
