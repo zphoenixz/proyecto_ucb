@@ -6,6 +6,7 @@ var path = require('path');
 router.use(express.static('public'));
 router.get('/', function(req, res/*, next*/) {
   //res.render('index', { title: 'Express' });
+  console.log(__dirname);
   res.sendFile('materia.html', {root: path.join(__dirname, '../views')});
 });
 
