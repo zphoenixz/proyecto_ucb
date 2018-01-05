@@ -1,9 +1,6 @@
 // Initial Setup--------------------------------------------------------------
-var express = require('express');
-var path = require('path');
-var favicon = require('serve-favicon');
 
-var aux = require('./materia');
+var aux = require('./materia.js');
 var canvas = document.querySelector('canvas');
 var c = canvas.getContext('2d');
 var subjects, clickedcircle = -1, search_up = false;
@@ -419,9 +416,9 @@ function subject(nombre, x, y, radius, r, g, b){
 			if(dok<20){
 				console.log("Quiero añadir");	
 			}else if(dver<30){
-				aux.NMateria = this.nombre;
+				var nom = CNombre(this.nombre);
 				//NMateria = this.nombre;
-				console.log("Quiero ver "+aux.NMateria);
+				console.log("Quiero ver " + nom);
 				window.open("https://inscribirme.herokuapp.com/materia");
 			}else{
 				this.radius = this.radaux;

@@ -1,5 +1,8 @@
 var NMateria = "Sin Nombre";
-exports.NMateria = NMateria;
+module.exports = function CNombre(nom) {
+    NMateria = nom;
+    return NMateria;
+};
 function set_NMateria(nombre){
     NMATERIA = nombre;
 }
