@@ -36,11 +36,11 @@ var materias = [
 	"dra","dre","dre","dro","dru","era","ere","ere","ero","eru"
 ];
 app.use(function(){
-  console.log("Quiero redirigir");
+  console.log('Quiero redirigir');
   for (i = 0; i < materias.length; ++i) {
     if ( document.URL.split('/')[3] == materias[i]){
-      console.log("Encontre a :" +materias[i]);
-        return "/"+materias[i];
+      console.log('Encontre a :' +materias[i]);
+        return '/'+materias[i];
     }
   }
 }, ruta_materia);
