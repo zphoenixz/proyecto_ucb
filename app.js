@@ -26,8 +26,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use('/', index);
 app.use('/users', users);
 app.use('/materia', ruta_materia);
-app.use(function(){
-return '/pro';}, ruta_materia);
+
 //==================================================================MANEJAR MATERIAS
 var materias = [
 	"Calculo I", //Busquedas escondidas como atributo mat
@@ -43,6 +42,9 @@ for (i = 0; i < materias.length; ++i) {
     app.use('/'+materias[i],ruta_materia);
   }
 }*/
+function routear(){
+  return '/pro';}
+app.use(routear(), ruta_materia);
 
 
 
